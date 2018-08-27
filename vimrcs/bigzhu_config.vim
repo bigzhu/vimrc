@@ -1,6 +1,5 @@
 " 样式
-set background=dark
-colorscheme solarized
+colorscheme Tomorrow-Night
 " markdown--------------------------------------------------------------------------------------------------------------
 let g:md_path='~/Dropbox/blog/'
 map <c-s> :execute 'silent cd' md_path<cr>:SearchMD 
