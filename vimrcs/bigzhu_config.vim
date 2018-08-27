@@ -1,6 +1,9 @@
+" 样式
+set background=dark
+colorscheme solarized
 " markdown--------------------------------------------------------------------------------------------------------------
 let g:md_path='~/Dropbox/blog/'
-map <c-w> :execute 'silent cd' md_path<cr>:SearchMD 
+map <c-s> :execute 'silent cd' md_path<cr>:SearchMD 
 " 用这一行来跳转文件(search 时用)
 nmap <c-g> 0v$<esc>: execute "open ".getline("'<").".md"<cr>
 " 取到v 下选中的值, 再用 open 打开
@@ -34,12 +37,5 @@ autocmd BufNew * if winnr('$') == 1 | tabmove99 | endif
 let NERDTreeIgnore = ['\.pyc$','nohup.out', 'node_modules']
 "打开文件时改变path
 autocmd BufEnter * lcd %:p:h
-
-" insert 和移动模式下显示不同光标, mac要用 iTerm2 才有用
-if exists('$TMUX')
-      let &t_SI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=1\x7\<Esc>\\"
-      let &t_EI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=0\x7\<Esc>\\"
-else
-      let &t_SI = "\<Esc>]50;CursorShape=1\x7"
-      let &t_EI = "\<Esc>]50;CursorShape=0\x7"
-endif
+"打开在左边
+let g:NERDTreeWinPos = "left"

@@ -4,29 +4,19 @@
 
 从 [vimrc](https://github.com/amix/vimrc) fork 出来的, 加了一些自定义的东西
 
-## Install
+## 安装
 
 	git clone --depth=1 https://github.com/bigzhu/vimrc.git ~/.vim_runtime
 	sh ~/.vim_runtime/install_awesome_vimrc.sh
 	
-## How to update to latest version?
+## 升级
 
 Just do a git rebase!
 
     cd ~/.vim_runtime
     git pull --rebase
 
-
-## Fonts
-
-I recommend using [IBM Plex Mono font](https://github.com/IBM/plex) (it's an open-source and awesome font that can make your code beautiful). The Awesome vimrc is already setup to try to use it.
-
-Some other fonts that Awesome will try to use:
-
-* [Hack](http://sourcefoundry.org/hack/)
-* [Source Code Pro](https://adobe-fonts.github.io/source-code-pro/)
-
-## How to include your own stuff?
+## 自己的配置和额外插件
 
 After you have installed the setup, you can create **~/.vim_runtime/my_configs.vim** to fill in any configurations that are important for you. For instance, my **my_configs.vim** looks like this:
 
