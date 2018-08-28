@@ -1,8 +1,12 @@
 ![VIM](https://dnp4pehkvoo6n.cloudfront.net/43c5af597bd5c1a64eb1829f011c208f/as/Ultimate%20Vimrc.svg)
 
-# The Ultimate vimrc
+# Bigzhu 的 vimrc
 
-从 [vimrc](https://github.com/amix/vimrc) fork 出来的, 加了一些自定义的东西
+直接可以安装使用的 vim 配置
+
+有建议和不满可以开 issues 提.
+
+基于 [vimrc](https://github.com/amix/vimrc) 改造的更舒服一些.
 
 ## 安装
 
@@ -11,11 +15,23 @@
 	
 ## 升级
 
-Just do a git rebase!
-
     cd ~/.vim_runtime
     git pull --rebase
 
+## 样式
+
+默认使用了简洁漂亮的 [tomorrow-theme](https://github.com/chriskempson/tomorrow-theme)
+
+建议 iterm2 的样式也这个
+
+## 插件介绍
+
+### vim-nerdtree-tabs
+
+[vim-nerdtree-tabs](https://github.com/jistr/vim-nerdtree-tabs)
+
+让 vim 不同的 tab 共用同一个 nerdtree. 原本项目已经没有再维护了, 属于必备插件. 
+ 
 ## 自己的配置和额外插件
 
 After you have installed the setup, you can create **~/.vim_runtime/my_configs.vim** to fill in any configurations that are important for you. For instance, my **my_configs.vim** looks like this:

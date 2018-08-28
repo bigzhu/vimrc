@@ -1,6 +1,14 @@
-" 样式
+" 通用配置 ------------------------------------------------------------------------------------------------------------------
 colorscheme Tomorrow-Night
-" markdown--------------------------------------------------------------------------------------------------------------
+" insert 和移动模式下显示不同光标, mac要用 iTerm2 才有用
+if exists('$TMUX')
+      let &t_SI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=1\x7\<Esc>\\"
+      let &t_EI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=0\x7\<Esc>\\"
+else
+      let &t_SI = "\<Esc>]50;CursorShape=1\x7"
+      let &t_EI = "\<Esc>]50;CursorShape=0\x7"
+endif
+" markdown wiki --------------------------------------------------------------------------------------------------------------
 let g:md_path='~/Dropbox/blog/'
 map <c-s> :execute 'silent cd' md_path<cr>:SearchMD 
 " 用这一行来跳转文件(search 时用)
@@ -22,7 +30,7 @@ else
     endfunction
 endif
 command! -nargs=1 SearchMD call SearchMD("<args>")
-"NERDTree-----------------------------------------------------------------------------------------------------------------------
+" NERDTree--------------------------------------------------------------------------------------------------------------
 "shift+i 显示隐藏文件
 "默认打开tree
 let g:nerdtree_tabs_open_on_console_startup=1
