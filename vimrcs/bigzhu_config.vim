@@ -10,7 +10,7 @@ else
 endif
 " markdown wiki --------------------------------------------------------------------------------------------------------------
 let g:md_path='~/Dropbox/blog/'
-map <c-s> :execute 'silent cd' md_path<cr>:SearchMD 
+map <c-m> :execute 'silent cd' md_path<cr>:SearchMD 
 " 用这一行来跳转文件(search 时用)
 nmap <c-g> 0v$<esc>: execute "open ".getline("'<").".md"<cr>
 " 取到v 下选中的值, 再用 open 打开

@@ -1,5 +1,9 @@
 The NERDTree
 =============
+修改
+----
+
+做了一点微小的修改, 参见[让nerdtree判断文件是否打开](http://blog.bigzhu.net/%E8%AE%A9nerdtree%E5%88%A4%E6%96%AD%E6%96%87%E4%BB%B6%E6%98%AF%E5%90%A6%E6%89%93%E5%BC%80)
 
 Introduction
 ------------

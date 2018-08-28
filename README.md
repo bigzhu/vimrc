@@ -24,13 +24,24 @@
 
 建议 iterm2 的样式也这个
 
-## 插件介绍
+## 功能介绍
 
-### vim-nerdtree-tabs
+### 左边的资源管理器
+
+![](https://ws4.sinaimg.cn/large/0069RVTdgy1fupe6pt0e5j30wz0qpta5.jpg)
+
+[nerdtree](https://github.com/bigzhu/nerdtree) 和 [vim-nerdtree-tabs](https://github.com/jistr/vim-nerdtree-tabs) 共同实现了一个资源管理日
 
 [vim-nerdtree-tabs](https://github.com/jistr/vim-nerdtree-tabs)
+让 vim 不同的 tab 共用同一个 nerdtree.
+ 
+简单功能介绍:
 
-让 vim 不同的 tab 共用同一个 nerdtree. 原本项目已经没有再维护了, 属于必备插件. 
+* 移动: ctrl+w 激活移动模式, 再按下 h 左移动, 按下 l 右移
+* enter 打开目录
+* t 打开文件
+
+一般不用 enter 来打开文件, 参见[让nerdtree判断文件是否打开](http://blog.bigzhu.net/%E8%AE%A9nerdtree%E5%88%A4%E6%96%AD%E6%96%87%E4%BB%B6%E6%98%AF%E5%90%A6%E6%89%93%E5%BC%80)
  
 ## 自己的配置和额外插件
 

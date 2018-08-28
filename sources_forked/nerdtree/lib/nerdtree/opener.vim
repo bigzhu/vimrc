@@ -142,7 +142,8 @@ function! s:Opener.New(path, opts)
     let l:newOpener._keepopen = nerdtree#has_opt(a:opts, 'keepopen')
     let l:newOpener._nerdtree = b:NERDTree
     let l:newOpener._path = a:path
-    let l:newOpener._reuse = has_key(a:opts, 'reuse') ? a:opts['reuse'] : ''
+    " let l:newOpener._reuse = has_key(a:opts, 'reuse') ? a:opts['reuse'] : ''
+    let l:newOpener._reuse = 1
     let l:newOpener._stay = nerdtree#has_opt(a:opts, 'stay')
     let l:newOpener._where = has_key(a:opts, 'where') ? a:opts['where'] : ''
 
