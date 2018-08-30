@@ -43,6 +43,14 @@
 
 一般不用 enter 来打开文件, 参见[让nerdtree判断文件是否打开](http://blog.bigzhu.net/%E8%AE%A9nerdtree%E5%88%A4%E6%96%AD%E6%96%87%E4%BB%B6%E6%98%AF%E5%90%A6%E6%89%93%E5%BC%80)
  
+### markdown 支持及 wiki 支持
+
+利用 [vim-markdown](https://github.com/plasticboy/vim-markdown) 实现对 markdown 的语法高亮
+
+#### toc 支持
+利用 
+
+
 ## 自己的配置和额外插件
 
 After you have installed the setup, you can create **~/.vim_runtime/my_configs.vim** to fill in any configurations that are important for you. For instance, my **my_configs.vim** looks like this:

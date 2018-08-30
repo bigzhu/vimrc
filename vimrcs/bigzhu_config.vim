@@ -1,4 +1,7 @@
 " 通用配置 ------------------------------------------------------------------------------------------------------------------
+" Tagbar 需要标准的 bash 来执行一些东西。xonsh 会报错
+set shell=/bin/bash
+" 主题
 colorscheme Tomorrow-Night
 " insert 和移动模式下显示不同光标, mac要用 iTerm2 才有用
 if exists('$TMUX')
