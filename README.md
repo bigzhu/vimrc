@@ -48,7 +48,24 @@
 利用 [vim-markdown](https://github.com/plasticboy/vim-markdown) 实现对 markdown 的语法高亮
 
 #### toc 支持
-利用 [tagbar]() 插件, 根据 markdown 标题, 生成标题列表.
+利用 [tagbar](https://github.com/majutsushi/tagbar) 插件, 根据 markdown 标题, 生成标题列表.
+
+需要安装 ctags: `brew install ctags`
+
+并添加这个文件
+
+`vim ~/.ctags`
+
+```
+--langdef=markdown
+--langmap=markdown:.md
+--regex-markdown=/^#{1}[ \t]*([^#]+.*)/. \1/h,headings/
+--regex-markdown=/^#{2}[ \t]*([^#]+.*)/.   \1/h,headings/
+--regex-markdown=/^#{3}[ \t]*([^#]+.*)/.     \1/h,headings/
+--regex-markdown=/^#{4}[ \t]*([^#]+.*)/.       \1/h,headings/
+--regex-markdown=/^#{5}[ \t]*([^#]+.*)/.         \1/h,headings/
+--regex-markdown=/^#{6}[ \t]*([^#]+.*)/.           \1/h,headings/
+```
 
 
 ## 自己的配置和额外插件
