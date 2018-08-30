@@ -48,7 +48,7 @@
 利用 [vim-markdown](https://github.com/plasticboy/vim-markdown) 实现对 markdown 的语法高亮
 
 #### toc 支持
-利用 
+利用 [tagbar]() 插件, 根据 markdown 标题, 生成标题列表.
 
 
 ## 自己的配置和额外插件
